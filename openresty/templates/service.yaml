@@ -1,0 +1,22 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: {{ include "helm-openresty.fullname" . }}
+  labels:
+    {{ - include "helm-openresty.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      {{ - if .Values.service.name }}
+      name: {{ .Values.service.name }}
+      {{ - end }}
+      {{ - if .Values.service.protocol }}
+      protocol: {{ .Values.service.protocol }}
+      {{ - end }}
+      {{ - if and (eq .Values.service.type "NodePort") .Values.service.nodePort }}
+      nodePort: {{ .Values.service.nodePort }}
+      {{ - end }}
+  selector:
+    {{- include "helm-openresty.selectorLabels" . | nindent 4 }}

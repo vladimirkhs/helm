@@ -1,0 +1,52 @@
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: {{ include "helm-openresty.fullname" . }}
+  labels:
+    {{- include "helm-openresty.labels" . | nindent 4 }}
+  {{- if .Values.application.reloader }}
+  annotations:
+    reloader.stakater.com/auto: "true"
+    configmap.reloader.stakater.com/reload: {{ include "helm-openresty.fullname" . }}-cm
+  {{- end }}
+spec:
+  replicas: {{ .Values.application.replicaCount }}
+  revisionHistoryLimit: {{ .Values.application.revisionHistoryLimit }}
+  selector:
+    matchLabels:
+      {{- include "helm-openresty.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "helm-openresty.selectorLabels" . | nindent 8 }}
+      {{ - with .Values.application.podAnnotations }}
+      annotations:
+        {{ - toYaml . | nindent 8 }}
+      {{ - end }}
+    spec:
+      {{ - with .Values.application.imagePullSecrets }}
+      imagePullSecrets:
+        {{ - toYaml . | nindent 8 }}
+      {{ - end }}
+      containers:
+        - name: {{ include "helm-openresty.fullname" . }}
+          image: "{{ .Values.application.image.repository }}:{{ .Values.application.image.tag | default "centos-rpm" }}"
+          imagePullPolicy: {{ .Values.application.image.pullPolicy }}
+          ports:
+            - containerPort: 80
+              name: http
+          {{ - with .Values.application.probe }}
+          {{ - toYaml . | nindent 10 }}
+          {{ - end }}
+          {{- with .Values.application.resources }}
+          resources:
+            {{- toYaml . | nindent 10 }}
+          {{- end }}
+          volumeMounts:
+            - name: config
+              mountPath: /usr/local/openresty/nginx/html/
+      volumes:
+        - name: config
+          configMap:
+            name: {{ include "helm-openresty.fullname" . }}-cm
