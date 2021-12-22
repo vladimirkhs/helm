@@ -1,0 +1,6 @@
+2021-12-22 18:39:13@10.15.39.65@EGIP-CICD01P-10.15.39.65@RedHat@7.8@x86_64@/usr/lib/oracle/agent/core/12.1.0.5.0/ocm/jlib/jlib/log4j-core.jar contains Log4J-1.x   <= 1.2.17 _OLD_
+2021-12-22 18:39:13@10.15.39.65@EGIP-CICD01P-10.15.39.65@RedHat@7.8@x86_64@/usr/lib/oracle/agent/core/12.1.0.5.0/oui/jlib/jlib/log4j-core.jar contains Log4J-1.x   <= 1.2.17 _OLD_
+2021-12-22 18:39:13@10.15.39.65@EGIP-CICD01P-10.15.39.65@RedHat@7.8@x86_64@/usr/lib/oracle/agent/core/12.1.0.5.0/rda/da/lib/log4j-core.jar contains Log4J-1.x   <= 1.2.17 _OLD_
+2021-12-22 18:39:13@10.15.39.65@EGIP-CICD01P-10.15.39.65@RedHat@7.8@x86_64@/usr/lib/oracle/agent/core/12.1.0.5.0/sysman/jlib/log4j-core.jar contains Log4J-1.x   <= 1.2.17 _OLD_
+2021-12-22 18:39:13@10.15.39.65@EGIP-CICD01P-10.15.39.65@RedHat@7.8@x86_64@/usr/lib/oracle/agent/plugins/oracle.mysql.omys.discovery.plugin_12.1.0.3.0/lib/log4j-1.2.15.jar contains Log4J-1.x   <= 1.2.17 _OLD_
+2021-12-22 18:39:13@10.15.39.65@EGIP-CICD01P-10.15.39.65@RedHat@7.8@x86_64@/opt/nexus/system/org/ops4j/pax/logging/pax-logging-api/1.11.6/pax-logging-api-1.11.6.jar contains Log4J-1.x   <= 1.2.17 _OLD_
