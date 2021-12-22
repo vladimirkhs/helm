@@ -3,7 +3,7 @@ entries:
   helm-openresty:
   - apiVersion: v2
     appVersion: 1.19.9.1-4-centos-rpm
-    created: "2021-12-22T10:29:44.2012235+03:00"
+    created: "2021-12-22T10:55:59.783455+03:00"
     description: A Helm chart for Kubernetes
     digest: 988cf0ed496001edc4760d71c2c751d625ed6281335f4069d7e3a623270d667c
     home: https://github.com/vladimirkhs/kuber/tree/main/helm-openresty
@@ -16,4 +16,4 @@ entries:
     urls:
     - helm-openresty-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-22T10:29:44.1885351+03:00"
+generated: "2021-12-22T10:55:59.7739736+03:00"
