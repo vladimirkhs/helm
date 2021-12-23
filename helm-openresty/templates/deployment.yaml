@@ -20,15 +20,15 @@ spec:
     metadata:
       labels:
         {{- include "helm-openresty.selectorLabels" . | nindent 8 }}
-      {{ - with .Values.application.podAnnotations }}
+      {{- with .Values.application.podAnnotations }}
       annotations:
-        {{ - toYaml . | nindent 8 }}
-      {{ - end }}
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
     spec:
-      {{ - with .Values.application.imagePullSecrets }}
+      {{- with .Values.application.imagePullSecrets }}
       imagePullSecrets:
-        {{ - toYaml . | nindent 8 }}
-      {{ - end }}
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       containers:
         - name: {{ include "helm-openresty.fullname" . }}
           image: "{{ .Values.application.image.repository }}:{{ .Values.application.image.tag | default "centos-rpm" }}"
@@ -36,9 +36,9 @@ spec:
           ports:
             - containerPort: 80
               name: http
-          {{ - with .Values.application.probe }}
-          {{ - toYaml . | nindent 10 }}
-          {{ - end }}
+          {{- with .Values.application.probe }}
+          {{- toYaml . | nindent 10 }}
+          {{- end }}
           {{- with .Values.application.resources }}
           resources:
             {{- toYaml . | nindent 10 }}
