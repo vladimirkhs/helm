@@ -1,0 +1,19 @@
+apiVersion: v1
+entries:
+  helm-openresty:
+  - apiVersion: v2
+    appVersion: 1.19.9.1-4-centos-rpm
+    created: "2021-12-23T06:04:30.5897696+03:00"
+    description: A helm-openresty chart for k8s
+    digest: 729f3496703f91d7fed8de7ac5a90b07a031664d1996e57d0f0ed71641a225ef
+    home: https://vladimirkhs.github.io/helm/blob/master/helm-openresty/charts
+    maintainers:
+    - email: vkhs@bk.ru
+      name: vladimirkhs
+      url: https://vladimirkhs.github.io/helm/
+    name: helm-openresty
+    type: application
+    urls:
+    - https://vladimirkhs.github.io/helm/helm-openresty-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-12-23T06:04:30.5834684+03:00"
