@@ -1,7 +1,7 @@
 apiVersion: v2
 name: helm-openresty
 description: A helm-openresty chart for k8s
-home: https://vladimirkhs.github.io/helm/helm-openresty/charts
+home: https://vladimirkhs.github.io/helm/tree/master/helm-openresty/charts
 maintainers:
   - name: vladimirkhs
     email: vkhs@bk.ru
