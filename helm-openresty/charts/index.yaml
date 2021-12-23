@@ -3,7 +3,7 @@ entries:
   helm-openresty:
   - apiVersion: v2
     appVersion: 1.19.9.1-4-centos-rpm
-    created: "2021-12-23T05:57:37.1394916+03:00"
+    created: "2021-12-23T05:59:22.2265146+03:00"
     description: A helm-openresty chart for k8s
     digest: f2fbe124b5930ab7387db1778581817474c1805b57a0a3a2057239f0d95fb6bb
     home: https://vladimirkhs.github.io/helm/helm-openresty/charts
@@ -16,4 +16,4 @@ entries:
     urls:
     - https://vladimirkhs.github.io/helm/tree/master/helm-openresty/charts/helm-openresty-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-23T05:57:37.1326654+03:00"
+generated: "2021-12-23T05:59:22.2182149+03:00"
