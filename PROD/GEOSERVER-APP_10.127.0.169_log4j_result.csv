@@ -1,7 +1,0 @@
-2021-12-22 18:39:27@10.127.0.169@geoserver-app@RedHat@7.2@x86_64@/usr/lib/oracle/agent/core/12.1.0.4.0/ocm/jlib/jlib/log4j-core.jar contains Log4J-1.x   <= 1.2.17 _OLD_
-2021-12-22 18:39:27@10.127.0.169@geoserver-app@RedHat@7.2@x86_64@/usr/lib/oracle/agent/core/12.1.0.4.0/oui/jlib/jlib/log4j-core.jar contains Log4J-1.x   <= 1.2.17 _OLD_
-2021-12-22 18:39:27@10.127.0.169@geoserver-app@RedHat@7.2@x86_64@/usr/lib/oracle/agent/core/12.1.0.4.0/rda/da/lib/log4j-core.jar contains Log4J-1.x   <= 1.2.17 _OLD_
-2021-12-22 18:39:27@10.127.0.169@geoserver-app@RedHat@7.2@x86_64@/usr/lib/oracle/agent/core/12.1.0.4.0/sysman/jlib/log4j-core.jar contains Log4J-1.x   <= 1.2.17 _OLD_
-2021-12-22 18:39:27@10.127.0.169@geoserver-app@RedHat@7.2@x86_64@/opt/apache-tomcat-8.0.27/webapps/geoserver/WEB-INF/lib/log4j-1.2.14.jar contains Log4J-1.x   <= 1.2.17 _OLD_
-2021-12-22 18:39:27@10.127.0.169@geoserver-app@RedHat@7.2@x86_64@/opt/apache-tomcat-8.0.27/webapps/geoserver.war!/WEB-INF/lib/log4j-1.2.14.jar contains Log4J-1.x   <= 1.2.17 _OLD_
-2021-12-22 18:39:27@10.127.0.169@geoserver-app@RedHat@7.2@x86_64@/usr/openv/lib/java/log4j-1.2.17.jar contains Log4J-1.x   <= 1.2.17 _OLD_

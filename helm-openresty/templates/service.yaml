@@ -4,7 +4,7 @@ apiVersion: v1
 metadata:
   name: {{ include "helm-openresty.fullname" . }}
   labels:
-    {{ - include "helm-openresty.labels" . | nindent 4 }}
+    {{- include "helm-openresty.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
